@@ -1,0 +1,60 @@
+.Success-Stories{
+    margin-top: 90px;
+
+    @include mobile{
+        margin-top: 34px;
+        width: 787px;
+    }
+    }
+.head{
+    @include mobile{
+        margin-left: 200px;
+         width: 400px;
+    }
+    h2{
+        font-size: 50px;
+        font-weight: 700;
+        border-left: 5PX solid #ffa500;
+        padding-left: 15px;
+
+        @include mobile{
+            font-size: 59px;
+        }
+    }
+  }
+
+  .story{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+
+    @include mobile{
+        display: inline-block;
+    }
+
+    .story1{
+        width: 32%;
+        @include mobile{
+            width: 85%;
+            margin-left: 63px;
+        }
+
+        img{
+            width: 100%;
+        }
+        
+        p{
+            font-size: 30px;
+            font-weight: 600;
+            padding-top: 20px;
+
+            @include mobile{
+                padding: 14px;
+            }
+
+            &:hover{
+                color: #ffa500;
+            }
+        }
+  }
+}

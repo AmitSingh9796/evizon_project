@@ -1,0 +1,138 @@
+@import "variables";
+.banner1{
+    .banner{
+        position: relative;
+
+        @include mobile {
+            width: 787px;
+        }
+        img{
+            width: 100%;
+           @include mobile{
+            height: 301px;
+           }
+        }
+    }
+}
+.banner-text{
+    position: absolute;
+    top: 40%;
+    left: 12%;
+    transform: translate(-12%, -17%);
+
+    h2{
+        color: $white;
+        font-size: 65px;
+    }
+    p{
+        color: $white;
+        font-size: 29px;
+    }
+    button{
+        padding: 14px 32px;
+        font-size: 16px;
+        background-color: #ffa500;
+        border-style: none;
+        color: $white;
+        border-radius: 25px;
+        margin-top: 15px;
+    }
+}
+.circle {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    border: 7px dotted #91630e;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    animation: mymove 10s infinite;
+    @keyframes mymove {
+        50%{
+            transform: rotate(360deg);
+        }
+    }
+     @include mobile{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border: 7px dotted #91630e;
+        position: absolute;
+        top: 23%;
+        left: 124%;
+     }
+ 
+}
+  .square{
+    height: 40px;
+    width: 40px;
+    border: 5px solid #91630e;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    animation: mymove 10s infinite;
+
+    @keyframes mymove {
+        50%{
+            transform: rotate(360deg);
+        }
+    }
+  
+    @include mobile{
+        height: 35px;
+        width: 35px;
+        border: 5px solid #91630e;
+        position: absolute;
+        top: 89%;
+        left: 97%;
+    }
+}
+.circle2{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #91630e;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+.hover-text{
+    position: absolute;
+    top: 7%;
+    left: 15%;
+    background-color: #ffffff;
+    height: 300px;
+    width: 700px;
+    opacity: 0;
+    
+     .hover-text1{
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-left: 20px;
+        gap: 20px;
+        
+
+        .hover-text2{
+            display: flex;
+        
+           
+
+            .hover-icon{
+
+                i{
+                    font-size: 40px;
+                    color: #ffa500;
+                }
+            }
+            .hover-icon1{
+                p{
+                    font-size: 30px;
+                    padding-left: 20px;
+                }
+            }
+        }
+     }
+
+
+}

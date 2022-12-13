@@ -1,0 +1,114 @@
+.section-4{
+    margin-top: 60px;
+    background-color: #000000;
+    padding-bottom: 80px;
+
+    @include mobile {
+        width: 787px;
+    }
+    .banner4{
+         padding-top: 20px;
+        h2{
+            font-size: 68px;
+            font-weight: 900;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .banner-form{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+
+            @include mobile{
+                display: inline-block;
+                padding-top: 26px;
+            }
+            .banner-show{
+                 width: 48%;
+
+                 @include mobile{
+                    width: 80%;
+                    padding-left: 70px;
+                 }
+                 img{
+                    width: 100%;
+                 }
+            }
+            .banner-show1{
+                width: 48%;
+                background-color: #000000;
+
+                @include mobile{
+                    width: 80%;
+                    padding:  29px 78px;
+                }
+                 
+                  form{
+                    label{
+                   font-size: 25px;
+                   font-weight: bolder;
+                   color: #ffffff;
+                   padding-top: 5px;
+                   padding-bottom: 5px;
+                    }
+                    input{
+                        height: 49px;
+                        width: 601px;
+
+                       
+
+                        @include mobile{
+                            height: 49px;
+                             width: 610px;
+                             margin: 10px 0px;
+                        }
+                    }
+                    .robot{
+                        background-color: #ffffff;
+                        height: 71px;
+                        width: 250px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .robot1{
+                            width: 50%;
+                            padding-left: 10px;
+
+                           
+                        }
+                        .robot2{
+                            width: 50%;
+                            img{
+                                width: 73%;
+                            }
+                        }
+                    }
+                    #message{
+                        height: 100px;
+                        width: 602px;
+
+                        @include mobile{
+                            height: 150px;
+                             width: 610px;
+                             margin: 10px 0px;
+                        }
+                    }
+                    #check{
+                        width: 22px;
+                        height: 15px;
+                    }
+                  }
+                  button{
+                    background-color: #f1c40f;
+                    padding: 14px 38px;
+                    color: #ffffff;
+                    border-radius: 30px;
+                    font-size: 20px;
+                    margin-top: 20px;
+                  }
+            }
+        }
+    }
+}

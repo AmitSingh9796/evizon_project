@@ -1,0 +1,81 @@
+@import"variables";
+.service-section{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile{
+        margin-top: 40px;
+        display: inline-block;
+       width: 773px;
+    }
+    .service1{
+        width: 33%;
+        margin: 20px;
+        border-left: 5px solid #ffa500;
+        h2{
+            font-size: 42px;
+            width: 282px;
+            font-weight: 700;
+            margin-left: 10px;
+            margin-top: 15px;
+
+            @include mobile{
+                width: 723px;
+                font-weight: 700;
+                margin-left: 10px;
+            }
+        }
+    }
+   
+    }
+
+    .service2{
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid #ccabab;
+        margin: 20px;
+        
+        @include mobile{
+            width: 96%;
+        }
+
+        .row1{
+            img{
+                width: 90px;
+                display: flex;
+                justify-content: center;
+                padding-top: 40px;
+            }
+        }
+        .row2{
+            h6{
+                font-size: 30px;
+                padding-top: 30px;
+                text-align: center;
+            }
+        }
+        .row3{
+            p{
+                font-size:$local-font;
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 40px;
+                color: #ac9393;
+
+                @include mobile{
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+
+.service3{
+    width: 33%;
+    margin: 20px;
+}
+
+
+   

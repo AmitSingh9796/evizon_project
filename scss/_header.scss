@@ -1,0 +1,134 @@
+@import "variables";
+
+
+
+header{
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include mobile{
+         width: 783px;
+        }
+        
+        .logo{
+         @include mobile{
+            padding: 8px 20px;
+            position: relative;
+         }
+        }
+    }
+
+  
+    }
+
+    .nav-right{
+
+        @include mobile{
+         display: none;
+         position: absolute;
+         top: 68px;
+         background-color: white;
+           z-index: 1;
+             width: 787px;
+          height: 100vh;
+
+        }
+
+
+    }
+    .nav-right ul {
+        display: flex;
+        gap: 40px;
+         
+         @include mobile{
+            display: inline-block;
+            text-align: center;
+            margin-left: 260px;
+        
+         }
+
+          
+
+
+            .dropdown{
+              position: relative;
+              display: inline-block;
+         
+              &:hover .dropdown-content
+              {
+              display: block;}
+
+
+                
+        .dropdown-content {
+         display: none;
+         position: absolute;
+         top:39px;
+        
+         background-color: #ffffff;
+         min-width: 160px;
+         
+         z-index: 1;
+              
+        
+         a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            
+            
+            
+         
+            
+          }
+
+         
+
+        }
+             
+            }
+
+        
+      
+    }
+    
+    
+     li{
+        list-style-type: none;
+        position: relative;
+         
+        @include mobile{
+
+         padding: 11px;
+        }
+        
+     }
+     a{
+        text-decoration: none;
+        font-size: 22px;
+        color: $primary-color;
+        padding: 30px 0px;
+        
+        
+        @include mobile{
+        
+         font-size: 40px;
+        }
+    
+        }
+
+      
+     
+     
+     .mobile-nav{
+        display: none;
+        font-size: 30px;
+          @include mobile{
+            display: block;
+            font-size: 58px;
+          }
+     }
+    
+

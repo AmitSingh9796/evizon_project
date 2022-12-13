@@ -1,0 +1,18 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+
+   
+}
+@import "variables";
+@import "header";
+@import "banner1";
+@import"section1";
+@import"section2";
+@import"section3";
+@import"section4";
+@import"footer";

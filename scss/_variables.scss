@@ -1,0 +1,10 @@
+$primary-color:#000000;
+$local-font:20px;
+$white:#ffffff;
+
+@mixin mobile{
+    @media screen and (max-width:600px ) {
+
+        @content;
+    }
+}
